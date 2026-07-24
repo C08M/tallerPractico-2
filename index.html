@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tienda Online</title>
+</head>
+<body>
+    <header>
+
+    <nav>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#" target="_blank">Carrito</a>
+
+    </nav>
+
+    
+    </header>
+
+    <section class="titulo">
+        <p class="subtitulo">Productos de alta calidad</p>
+        <h1>HARDWARE DE ALTA GAMA</h1>
+        <p class="descripcion">Productos de marcas reconocidas en el mercado</p>
+
+    </section>
+
+    <section id="inicio">
+        <h2>Nuestros Productos</h2>
+    </section>
+
+    <section id="productos">
+
+        <div class="filtros">
+            <input type="text" id="buscador" placeholder="Buscar producto..." onkeyup="filtrarProductos()">
+
+            <select id="categoria" onchange="filtrarProductos()">
+                <option value="todas">Todas las categorías</option>
+                <option value="monitores">Monitores</option>
+                <option value="teclados">Teclados</option>
+                <option value="mouse">Mouse</option>
+            </select>
+        </div>
+
+        <article class="producto" data-categoria="monitores">
+        <img src="/img/monitor-de-24-ips.webp" alt="Monitor de 24” IPS Steren" width="160">
+        <h3>Monitor de 24” IPS Steren </h3>
+        <ul>
+            <li>Tamaño de pantalla de 24 pulgadas</li>
+            <li>Proyecta en resolución FULL HD 1080p 100 Hz</li>
+            <li>1 entrada de video por HDMI</li>
+            <li>1 entrada de video por VGA</li>
+            <li>Opción DCR (Dynamic Contrast Ratio)</li>
+            <li>Compatible con estándar VESA 75 x 75</li>
+            <li>Incluye cable HDMI y convertidor de voltaje</li>
+        </ul>
+        <p class="precio">$0.00</p>
+        <button type="button">Agregar al carrito</button>
+        </article>
+
+        <article class="producto" data-categoria="teclados">
+        <img src="/img/teclado.jfif" alt="TECLADO GAMER LOGITECH PRO X 60 WHITE LIGHTSPEED" width="160">
+        <h3>TECLADO GAMER LOGITECH PRO X 60 WHITE LIGHTSPEED</h3>
+        <ul>
+            <li>Dimensiones (al. x an. x gr.)	290 mm x 103 mm x 39 mm</li>
+            <li>Peso	610 g</li>
+            <li>Conexión	receptor USB, Bluetooth, cable</li>
+            <li>Bluetooth	5.1</li>
+            <li>Fecha presentación	9 de abril de 2024</li>
+            <li>Batería	1500 mAh</li>
+            <li>Perfiles	almacena 6 perfiles</li>
+            <li>Interruptores	GX ópticos táctiles de Logitech</li>
+            <li>Material de las teclas	PBT</li>
+            <li>Teclas multimedia dedicadas	sí</li>
+            <li>Iluminación	RGB por tecla</li>
+            <li>Longitud del cable	1.8 m</li>
+            <li>Cable retirable	sí</li>
+        </ul>
+        <p class="precio">$0.00</p>
+        <button type="button">Agregar al carrito</button>
+        </article>
+
+        <article class="producto" data-categoria="mouse">
+        <img src="/img/MOULOG910005565.webp" alt="MOUSE LOGITECH GAMING G502 WIRELESS LIGHTSPEED SENSOR HERO 16K RGB LIGHTSYNC RECARGABLE POWERPLAY"
+        width="160">
+        <h3>MOUSE LOGITECH GAMING G502 WIRELESS LIGHTSPEED SENSOR HERO 16K RGB LIGHTSYNC RECARGABLE POWERPLAY</h3>
+        <ul>
+            <li>BATERÍA LIPO DE 60 HORAS</li>
+            <li>LATERALES RECUBIERTOS DE GOMA</li>
+            <li>SENSOR HERO 25K</li>
+            <li>Velocidad de respuesta USB: 1 ms (1.000 Hz)</li>
+            <li>Altura: 290 mm</li>
+            <li>Ancho: 75 mm</li>
+            <li>Profundidad: 40 mm</li>
+            <li>Peso: 114 g (solo mouse)</li>
+            <li>Pesas adicionales opcionales: hasta: 16 g</li>
+            <li>Memoria integrada</li>
+        </ul>
+        <p class="precio">$0.00</p>
+        <button type="button">Agregar al carrito</button>
+        </article>
+
+        <article class="producto" data-categoria="mouse">
+        <img src="/img/MOULOG910005565.webp" alt="MOUSE LOGITECH GAMING G502 WIRELESS LIGHTSPEED SENSOR HERO 16K RGB LIGHTSYNC RECARGABLE POWERPLAY"
+        width="160">
+        <h3>MOUSE LOGITECH GAMING G502 WIRELESS LIGHTSPEED SENSOR HERO 16K RGB LIGHTSYNC RECARGABLE POWERPLAY</h3>
+        <ul>
+            <li>BATERÍA LIPO DE 60 HORAS</li>
+            <li>LATERALES RECUBIERTOS DE GOMA</li>
+            <li>SENSOR HERO 25K</li>
+            <li>Velocidad de respuesta USB: 1 ms (1.000 Hz)</li>
+            <li>Altura: 290 mm</li>
+            <li>Ancho: 75 mm</li>
+            <li>Profundidad: 40 mm</li>
+            <li>Peso: 114 g (solo mouse)</li>
+            <li>Pesas adicionales opcionales: hasta: 16 g</li>
+            <li>Memoria integrada</li>
+        </ul>
+        <p class="precio">$0.00</p>
+        <button type="button">Agregar al carrito</button>
+        </article>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>No se que poner aqui skdkfiuwefgiouwfkjzsgf</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contactanos</h2>
+
+        <form action="#" method="post">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre aqui"><br>
+
+        <label for="correo">Correo</label><br>
+        <input type="email" id="correo" name="correo" placeholder="Escriba su email aqui"><br>
+
+        <label for="mensaje">Mensaje</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40" maxlength="500" placeholder="Dejenos su comentario aqui"></textarea><br>
+
+        <label for="telefono">Telefono</label><br>
+        <input type="tel" id="telefono" placeholder="Escriba su numero de telefono aqui" pattern="[0-9]{10}"><br>
+
+        <br><button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados</p>
+    <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+    </nav>
+    </footer>
+
+    <script src="./filtro.js"></script>
+</body>
+</html>
